@@ -20,7 +20,7 @@ Sprawdź moją stronę: [nicram-code.github.io](https://nicram-code.github.io/)
 1. Sklonuj repozytorium:
 ```bash
 git clone <repozytorium>
-cd fake-data-gen
+cd fake-it
 ```
 
 2. Utwórz wirtualne środowisko (opcjonalne, ale zalecane):
@@ -107,7 +107,7 @@ Check out my website: [nicram-code.github.io](https://nicram-code.github.io/)
 1. Clone the repository:
 ```bash
 git clone <repository>
-cd fake-data-gen
+cd fake-it
 ```
 
 2. Create a virtual environment (optional but recommended):
