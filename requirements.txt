@@ -2,3 +2,5 @@ typer
 rich
 requests
 python-dotenv
+faker   
+colorama
