@@ -15,11 +15,28 @@ Report a bug or contact me on Discord.
 
 Check out my website: [nicram-code.github.io](https://nicram-code.github.io/)
 
-## �📋 Requirements
+## 📋 Requirements
 
 - Python 3.7 or higher
+- Bash (for automated setup on Linux/macOS)
 
 ## 🚀 Installation
+
+### Quick Setup (Recommended)
+
+Run the automated setup script:
+
+```bash
+bash setup.sh
+```
+
+This script will:
+- Detect your operating system
+- Check for Python installation
+- Create a virtual environment (`.venv`)
+- Install all required dependencies
+
+### Manual Setup
 
 1. Clone the repository:
 ```bash
@@ -27,17 +44,43 @@ git clone <repository>
 cd fake-it
 ```
 
-2. Create a virtual environment (optional but recommended):
+2. Create a virtual environment:
 ```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
 # or
-venv\Scripts\activate  # Windows
+.venv\Scripts\activate  # Windows
 ```
 
 3. Install required packages:
 ```bash
 pip install -r requirements.txt
+```
+
+### Dependencies
+
+The project uses the following Python packages:
+- `faker` - Fake data generation
+- `colorama` - Terminal colors
+- `typer` - CLI interface
+- `rich` - Rich text formatting
+- `requests` - HTTP requests
+- `python-dotenv` - Environment variables
+
+## 📁 Project Structure
+
+```
+fake-it/
+├── main.py           # Main application entry point
+├── setup.sh          # Automated setup script
+├── requirements.txt  # Python dependencies
+├── src/
+│   ├── config.json   # Configuration file
+│   ├── imports.py    # Import utilities
+│   └── utils.py      # Helper functions
+├── .gitignore        # Git ignore rules
+├── LICENSE           # License file
+└── README.md         # This file
 ```
 
 ## 🎮 Usage
